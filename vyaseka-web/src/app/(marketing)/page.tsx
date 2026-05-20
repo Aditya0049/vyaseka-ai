@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import {
   Mic2, ArrowRight, Zap, Globe, FileText, BarChart3,
-  Users, Clock, Shield, ChevronDown, Star, Check, X,
+  Users, Clock, Shield, ChevronDown, Check, X,
   Play, Download, Brain, Sparkles, MessageSquare, Volume2
 } from 'lucide-react';
 
@@ -92,12 +92,7 @@ const STEPS = [
   { num: '03', title: 'Review & Export', desc: 'Edit inline, search your transcript, and export to PDF, DOCX, or SRT in one click.', icon: Download },
 ];
 
-// ── Testimonials ──────────────────────────────────────────────────────
-const TESTIMONIALS = [
-  { name: 'Priya Sharma', role: 'Podcast Host, Delhi', text: 'Vyaseka cut my editing time from 4 hours to 20 minutes. The accuracy on Hindi-English code-switching is insane.', stars: 5 },
-  { name: 'Dr. Rahul Joshi', role: 'Physician, Pune', text: 'I dictate patient notes and get a clean structured transcript. Compliant, fast, and accurate. Best tool I\'ve found.', stars: 5 },
-  { name: 'Kavya Nair', role: 'Content Agency, Bangalore', text: 'We process 200+ videos a week. Vyaseka\'s bulk processing and SRT export are game changers for our workflow.', stars: 5 },
-];
+
 
 // ── Pricing ───────────────────────────────────────────────────────────
 const PLANS = [
@@ -351,33 +346,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ── */}
-      <section className="py-24 px-4 sm:px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
-              Trusted by creators, doctors, and teams
-            </h2>
-            <p className="text-white/40 text-lg">Real results from real users.</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {TESTIMONIALS.map(({ name, role, text, stars }) => (
-              <div key={name} className="card-hover p-6 rounded-2xl border border-white/8 bg-white/3">
-                <div className="flex gap-0.5 mb-4">
-                  {Array.from({ length: stars }).map((_, i) => (
-                    <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-white/70 text-sm leading-relaxed mb-5">&ldquo;{text}&rdquo;</p>
-                <div>
-                  <div className="font-semibold text-white text-sm">{name}</div>
-                  <div className="text-xs text-white/40 mt-0.5">{role}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── PRICING ── */}
       <section id="pricing" className="py-24 px-4 sm:px-6 bg-black/20">
