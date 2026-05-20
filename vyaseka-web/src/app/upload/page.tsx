@@ -269,7 +269,7 @@ export default function UploadPage() {
                 <div className="p-8 rounded-2xl border border-yellow-500/30 bg-yellow-500/5 text-center">
                   <Lock className="w-10 h-10 text-yellow-400 mx-auto mb-4" />
                   <h3 className="text-xl font-bold text-white mb-2">Free limit reached</h3>
-                  <p className="text-white/50 text-sm mb-6">You've used your 5 free minutes. Upgrade to continue.</p>
+                  <p className="text-white/50 text-sm mb-6">You&apos;ve used your 5 free minutes. Upgrade to continue.</p>
                   <Link href="/#pricing" className="btn-primary justify-center py-3 inline-flex">
                     <Zap className="w-4 h-4" /> View Plans — from ₹799/mo
                   </Link>
