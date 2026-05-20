@@ -44,10 +44,7 @@ export function Footer() {
             <p className="text-sm text-white/40 leading-relaxed max-w-xs mb-6">
               Voice infrastructure for India and multilingual global workflows. Transcribe, summarize, and understand speech at scale.
             </p>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-green-400 status-dot" />
-              <span className="text-xs text-white/40">Incubated at SPPU Research Park Foundation</span>
-            </div>
+            {/* incubator badge removed */}
             <div className="flex items-center gap-3 mt-5">
               {/* Instagram Icon */}
               <a
