@@ -165,16 +165,6 @@ export default function HomePage() {
       {/* ── HERO ── */}
       <section className="relative pt-40 pb-24 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          {/* Badge */}
-          <div className="flex justify-center mb-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-blue-500/20 text-sm">
-              <div className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
-              <span className="text-white/60">Incubated at</span>
-              <span className="text-blue-400 font-semibold">SPPU Research Park Foundation</span>
-              <Sparkles className="w-3.5 h-3.5 text-blue-400" />
-            </div>
-          </div>
-
           {/* Headline */}
           <h1 className="text-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[1.0] text-white mb-6">
             Turn Speech Into{' '}
